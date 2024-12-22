@@ -5,11 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header class="header">
-        <div class="container">
+        <div class="container container-fluid">
             <div class="header-wrapper">
                 <ul>
                     <li><a href="">Works</a></li>
@@ -22,18 +26,23 @@
     <section class="section-info">
         <div class="container">
             <div class="section-info-wrapper">
-                <h1>
-                    Hi, I am John,<br>Creative Technologist
-                </h1>
-                <p>
-                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
-                    duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-                </p>
-                <div>
-                    <img src="img/foto.png" alt="foto">
+                <div class="info-left">
+                    <h1>
+                        Hi, I am John,<br>Creative Technologist
+                    </h1>
+                    <p>
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                        consequat
+                        duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                    </p>
+                    <div>
+                        <button>Download Resume</button>
+                    </div>
                 </div>
-                <div>
-                    <button>Download Resume</button>
+                <div class="info-right">
+                    <div class="img-foto">
+                        <img src="img/foto.png" alt="foto">
+                    </div>
                 </div>
             </div>
         </div>
@@ -41,21 +50,27 @@
     <section class="section-posts">
         <div class="container">
             <div class="section-posts-wrapper">
-                <div class="post-item">
-                    <h2>
-                        Making a design system from scratch
-                    </h2>
-                    <P>12 Feb 2020</P>
-                    <p>Design, Pattern</p>
-                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
-                        duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                <div class="post-title">
+                    <h2>Recent posts</h2>
+                    <a href="">View all</a>
                 </div>
-                <div class="post-item right">
-                    <h2>Creating pixel perfect icons in Figma</h2>
-                    <p>12 Feb 2020</p>
-                    <p>Figma, Icon Design</p>
-                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
-                        duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                <div class="post-item-container">
+                    <div class="post-item">
+                        <h2>
+                            Making a design system from scratch
+                        </h2>
+                        <h5 class="post-item-data">12 Feb 2020<span class="line"></span> Design, Pattern</h5>
+                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                            consequat
+                            duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                    </div>
+                    <div class="post-item-right">
+                        <h2>Creating pixel perfect icons in Figma</h2>
+                        <h5 class="post-item-data">12 Feb 2020<span class="line-v"></span> Figma, Icon Design</h5>
+                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                            consequat
+                            duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -66,32 +81,55 @@
                 <div class="title-works">
                     <h2>Featured works</h2>
                 </div>
-                <div class="works">
-                    <img src="img/poster.jpg" alt="img1">
-                    <h2>Designing Dashboards</h2>
-                    <p>2020</p>
-                    <p>Dashboard</p>
-                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
-                        duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                <div class="works-container">
+                    <div class="works-img">
+                        <img src="img/poster.jpg" alt="img1">
+                    </div>
+                    <div class="works">
+                        <h2>Designing Dashboards</h2>
+                        <div class="works-data-container">
+                            <h5 class="works-data">2020</h5>
+                            <h4 class="works-type">Dashboard</h4>
+                        </div>
+                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                            consequat
+                            duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                    </div>
                 </div>
-                <div class="works">
-                    <img src="img/poster2.jpg" alt="img2">
-                    <h2>Vibrant Portraits of 2020</h2>
-                    <p>2018</p>
-                    <p>Illustration</p>
-                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
-                        duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                <div class="line-h"></div>
+                <div class="works-container">
+                    <div class="works-img">
+                        <img src="img/poster2.jpg" alt="img2">
+                    </div>
+                    <div class="works">
+                        <h2>Vibrant Portraits of 2020</h2>
+                        <div class="works-data-container">
+                            <h5 class="works-data">2018</h5>
+                            <h4 class="works-type">Illustration</h4>
+                        </div>
+                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                            consequat
+                            duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                    </div>
                 </div>
-                <div class="works">
-                    <img src="img/poster3.jpg" alt="img3">
-                    <h2>36 Days of Malayalam type</h2>
-                    <p>2018</p>
-                    <p>Typography</p>
-                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
-                        duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                <div class="line-h"></div>
+                <div class="works-container">
+                    <div class="works-img">
+                        <img src="img/poster3.jpg" alt="img3">
+                    </div>
+                    <div class="works">
+                        <h2>36 Days of Malayalam type</h2>
+                        <div class="works-data-container">
+                            <h5 class="works-data">2018</h5>
+                            <h4 class="works-type">Typography</h4>
+                        </div>
+                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                            consequat
+                            duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                    </div>
                 </div>
+                <div class="line-h"></div>
             </div>
-        </div>
     </section>
     <footer class="footer">
         <div class="container">
