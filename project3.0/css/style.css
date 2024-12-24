@@ -1,3 +1,9 @@
+:root {
+    --font-main: 'Heebo' , sans-serif;
+    --font-style: var(--font-style);
+    --font-weight: var(--font-weight);
+}
+
 .header {
     display: block;
 }
@@ -17,19 +23,19 @@
     text-decoration: none;
 }
 
-.header-wrapper li :active {
+.header-wrapper li:active {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.header-wrapper li :hover {
+.header-wrapper li:hover {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .header-wrapper a {
     text-decoration: none;
     color: #000000;
-    font-family: 'Heebo', sans-serif;
-    font-style: normal;
+    font-family: var(--font-main);
+    font-style: var(--font-style);
     font-weight: 500;
     font-size: 20px;
     line-height: 29px;
@@ -59,8 +65,8 @@
 
 
 .section-info-wrapper h1 {
-    font-family: 'Heebo';
-    font-style: normal;
+    font-family: var(--font-main);
+    font-style: var(--font-style);
     font-weight: 700;
     font-size: 44px;
     line-height: 60px;
@@ -68,17 +74,17 @@
 }
 
 .section-info-wrapper p {
-    font-family: 'Heebo';
-    font-style: normal;
-    font-weight: 400;
+    font-family: var(--font-main);
+    font-style: var(--font-style);
+    font-weight: var(--font-weight);
     font-size: 16px;
     line-height: 24px;
     color: #21243D;
 }
 
 .section-info-wrapper button {
-    font-family: 'Heebo';
-    font-style: normal;
+    font-family: var(--font-main);
+    font-style: var(--font-style);
     font-weight: 500;
     font-size: 20px;
     line-height: 29px;
@@ -101,7 +107,7 @@
     flex-direction: column;
 }
 
-.post-item-container {
+.post-item {
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -116,9 +122,9 @@
 .post-title h2 {
     margin-top: 0;
     margin-bottom: 0;
-    font-family: 'Heebo';
-    font-style: normal;
-    font-weight: 400;
+    font-family: var(--font-main);
+    font-style: var(--font-style);
+    font-weight: var(--font-weight);
     font-size: 22px;
     line-height: 60px;
     color: #21243D;
@@ -128,15 +134,15 @@
     display: block;
     padding: 24px 0px 24px 0px;
     text-decoration: none;
-    font-family: 'Heebo';
-    font-style: normal;
-    font-weight: 400;
+    font-family: var(--font-main);
+    font-style: var(--font-style);
+    font-weight: var(--font-weight);
     font-size: 16px;
     line-height: 24px;
     color: #00A8CC;
 }
 
-.post-item {
+.single-post {
     background-color: white;
     max-width: 372px;
     max-height: 295px;
@@ -144,19 +150,19 @@
     padding-right: 22px;
 }
 
-.post-item h2 {
-    font-family: 'Heebo';
-    font-style: normal;
+.single-post h2 {
+    font-family: var(--font-main);
+    font-style: var(--font-style);
     font-weight: 700;
     font-size: 26px;
     line-height: 38px;
     color: #21243D;
 }
 
-.post-item-data {
-    font-family: 'Heebo';
-    font-style: normal;
-    font-weight: 400;
+.single-post-date {
+    font-family: var(--font-main);
+    font-style: var(--font-style);
+    font-weight: var(--font-weight);
     font-size: 18px;
     line-height: 26px;
     color: #21243D;
@@ -164,61 +170,25 @@
     max-width: fit-content;
 }
 
-.line-v {
-    display: inline-block;
-    width: 1px;
-    height: 21px;
-    background-color: black;
-    vertical-align: middle;
-    margin-left: 32px;
-    margin-right: 27px;
-}
-
-.post-item p {
-    font-family: 'Heebo';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #21243D;
-}
-
-.post-item-right {
-    background-color: white;
-    max-width: 372px;
-    max-height: 295px;
-    padding-left: 22px;
-    padding-right: 22px;
-}
-
-.post-item-right h2 {
-    font-family: 'Heebo';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 38px;
-    color: #21243D;
-}
-
-.post-item-right p {
-    font-family: 'Heebo';
-    font-style: normal;
-    font-weight: 400;
+.single-post p {
+    font-family: var(--font-main);
+    font-style: var(--font-style);
+    font-weight: var(--font-weight);
     font-size: 16px;
     line-height: 24px;
     color: #21243D;
 }
 
 .title-works h2 {
-    font-family: 'Heebo';
-    font-style: normal;
-    font-weight: 400;
+    font-family: var(--font-main);
+    font-style: var(--font-style);
+    font-weight: var(--font-weight);
     font-size: 22px;
     line-height: 60px;
     color: #21243D;
 }
 
-.works-container {
+.works-list-item {
     display: flex;
     gap: 18px;
     position: relative;
@@ -229,8 +199,8 @@
 }
 
 .works h2 {
-    font-family: 'Heebo';
-    font-style: normal;
+    font-family: var(--font-main);
+    font-style: var(--font-style);
     font-weight: 700;
     font-size: 30px;
     line-height: 44px;
@@ -241,19 +211,19 @@
 
 }
 
-.works-data-container {
+.works-date-item {
     display: ruby;
 }
 
-.works-data {
+.works-date {
     display: inline;
     padding-left: 10px;
     padding-right: 10px;
     background: #142850;
     border-radius: 16px;
     max-width: fit-content;
-    font-family: 'Heebo';
-    font-style: normal;
+    font-family: var(--font-main);
+    font-style: var(--font-style);
     font-weight: 900;
     font-size: 18px;
     line-height: 60px;
@@ -261,9 +231,9 @@
 }
 
 .works-type {
-    font-family: 'Heebo';
-    font-style: normal;
-    font-weight: 400;
+    font-family: var(--font-main);
+    font-style: var(--font-style);
+    font-weight: var(--font-weight);
     font-size: 20px;
     line-height: 29px;
     color: #8695A4;
@@ -272,21 +242,12 @@
 }
 
 .works p {
-    font-family: 'Heebo';
-    font-style: normal;
-    font-weight: 400;
+    font-family: var(--font-main);
+    font-style: var(--font-style);
+    font-weight: var(--font-weight);
     font-size: 16px;
     line-height: 24px;
     color: #21243D;
-}
-
-.line-h {
-    display: inline-block;
-    width: 100%;
-    height: 1px;
-    background-color: #E0E0E0;
-    vertical-align: middle;
-    margin: 31px 0px 31px 0px;
 }
 
 .footer-social {
@@ -303,10 +264,29 @@
 }
 
 .footer-copyright p {
-    font-family: 'Heebo';
-    font-style: normal;
-    font-weight: 400;
+    font-family: var(--font-main);
+    font-style: var(--font-style);
+    font-weight: var(--font-weight);
     font-size: 14px;
     line-height: 21px;
     color: #21243D;
+}
+
+.line-v {
+    display: inline-block;
+    width: 1px;
+    height: 21px;
+    background-color: black;
+    vertical-align: middle;
+    margin-left: 32px;
+    margin-right: 27px;
+}
+
+.line-h {
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    background-color: #E0E0E0;
+    vertical-align: middle;
+    margin: 31px 0px 31px 0px;
 }
