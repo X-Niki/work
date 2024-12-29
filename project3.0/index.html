@@ -13,17 +13,32 @@
 
 <body>
     <header class="header">
-        <div class="container container-fluid">
+        <div class="container-fluid">
             <div class="header-wrapper">
-                <ul>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <ul class="menu" id="menu">
                     <li><a href="#">Works</a></li>
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
+                <script>
+                    function toggleMenu() {
+                        var menu = document.getElementById('menu');
+                        var hamburger = document.querySelector('.hamburger');
+                        var content = document.getElementById('content');
+                        menu.classList.toggle('active');
+                        hamburger.classList.toggle('active');
+                        content.classList.toggle('shifted');
+                    } 
+                </script>
             </div>
         </div>
     </header>
-    <section class="section-info">
+    <section class="section-info" id="content">
         <div class="container">
             <div class="section-info-wrapper">
                 <div class="info-left">
@@ -59,7 +74,7 @@
                         <h2>
                             Making a design system from scratch
                         </h2>
-                        <h5 class="single-post-date">12 Feb 2020<span class="line"></span> Design, Pattern</h5>
+                        <h5 class="single-post-date">12 Feb 2020<span class="line-v"></span> Design, Pattern</h5>
                         <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
                             consequat
                             duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
