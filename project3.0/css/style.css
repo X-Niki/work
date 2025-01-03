@@ -2,6 +2,7 @@
     --font-main: 'Heebo', sans-serif;
     --color-primary: #21243D;
     --color-secondary: #000000;
+    --color-tertiary: #8695A4;
 }
 
 .header {
@@ -39,6 +40,10 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 29px;
+}
+
+.header-wrapper a:active {
+    color: #FF6464;
 }
 
 
@@ -376,7 +381,9 @@
         margin-right: 12px;
     }
 
-    .header-wrapper ul {}
+    .header-wrapper ul {
+        gap: 0;
+    }
 
     .menu {
         display: flex;
@@ -410,6 +417,11 @@
         height: 25px;
         justify-content: space-between;
         margin: 10px;
+        transition: margin 0.3s ease;
+    }
+
+    .hamburger.active {
+        margin-bottom: 180px;
     }
 
     .hamburger div {
@@ -508,4 +520,81 @@
         width: 100%;
         height: auto;
     }
+}
+
+/* Blog page */
+.section-blog {
+    margin-left: 19px;
+    margin-right: 19px;
+}
+
+.container-blog {
+    max-width: 683px;
+}
+
+.title-blog h1 {
+    font-family: var(--font-main);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 60px;
+    color: var(--color-primary);
+}
+
+.blog {
+    display: flex;
+    flex-direction: column;
+}
+
+.blog a {
+    text-decoration: none;
+    font-family: var(--font-main);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 44px;
+    color: var(--color-primary);
+}
+
+.blog a:hover {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.blog-time {
+    display: ruby;
+}
+
+.blog-time h5 {
+    font-family: var(--font-main);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    color: var(--color-primary);
+    margin: 16px 20px 16px 0px;
+}
+
+.blog-time h3 {
+    font-family: var(--font-main);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    color: var(--color-tertiary);
+    margin: 16px 0px 16px 20px;
+}
+
+.blog-time span {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.blog p {
+    font-family: var(--font-main);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--color-primary);
+    margin: 0px;
 }
