@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container-fluid">
+            <div class="header-wrapper">
+                <div class="hamburger" onclick="toggleMenu()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <ul class="menu" id="menu">
+                    <li><a href="#">Works</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="section-blog" id="content">
+        <div class="blog-container">
+            <div class="section-blog-wrapper">
+                <div class="title-blog">
+                    <h1>Blog</h1>
+                </div>
+                <div class="blog-item-list">
+                    <div class="blog">
+                        <a href="#">UI Interactions of the week</a>
+                        <div class="blog-time">
+                            <h5>
+                                12 Feb 2019
+                            </h5>
+                            <span class="line-v">
+                            </span>
+                            <h3>
+                                Express, Handlebars
+                            </h3>
+                        </div>
+                        <p>
+                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                            consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                        </p>
+                    </div>
+                    <div class="line-h"></div>
+                    <div class="blog">
+                        <a href="#">UI Interactions of the week</a>
+                        <div class="blog-time">
+                            <h5>
+                                12 Feb 2019
+                            </h5>
+                            <span class="line-v">
+                            </span>
+                            <h3>
+                                Express, Handlebars
+                            </h3>
+                        </div>
+                        <p>
+                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                            consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                        </p>
+                    </div>
+                    <div class="line-h"></div>
+                    <div class="blog">
+                        <a href="#">UI Interactions of the week</a>
+                        <div class="blog-time">
+                            <h5>
+                                12 Feb 2019
+                            </h5>
+                            <span class="line-v">
+                            </span>
+                            <h3>
+                                Express, Handlebars
+                            </h3>
+                        </div>
+                        <p>
+                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                            consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                        </p>
+                    </div>
+                    <div class="line-h"></div>
+                    <div class="blog">
+                        <a href="#">UI Interactions of the week</a>
+                        <div class="blog-time">
+                            <h5>
+                                12 Feb 2019
+                            </h5>
+                            <span class="line-v">
+                            </span>
+                            <h3>
+                                Express, Handlebars
+                            </h3>
+                        </div>
+                        <p>
+                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                            consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                        </p>
+                    </div>
+                    <div class="line-h"></div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-social">
+                <a href="#"><img src="img/facebook.svg" alt="Facebook Logo"></a>
+                <a href="#"><img src="img/instagram.svg" alt="Instagram Logo"></a>
+                <a href="#"><img src="img/Twitter.svg" alt="Twitter Logo"></a>
+                <a href="#"><img src="img/Linkedin.svg" alt="Linkedin Logo"></a>
+            </div>
+            <div class="footer-copyright">
+                <p>Copyright &cop2020 All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('menu');
+            var hamburger = document.querySelector('.hamburger');
+            var content = document.getElementById('content');
+            menu.classList.toggle('active');
+            hamburger.classList.toggle('active');
+            content.classList.toggle('shifted');
+        } 
+    </script>
+</body>
+
+</html>
