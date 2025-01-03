@@ -84,8 +84,9 @@
     color: var(--color-primary);
 }
 
-.info-left button {
+.info-left-button a {
     font-family: var(--font-main);
+    text-decoration: none;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -95,6 +96,33 @@
     background: #FF6464;
     border-radius: 2px;
     border-color: #FF6464;
+    transition: all 0.5s;
+}
+
+.info-left-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.info-left-button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+
+}
+
+.info-left-button:hover span {
+    padding-right: 25px;
+}
+
+.info-left-button:hover span:after {
+    opacity: 1;
+    right: 0;
 }
 
 .section-posts {
@@ -145,20 +173,27 @@
 }
 
 .single-post {
-    background-color: white;
+    background-color: #FFFFFF;
     max-width: 372px;
     max-height: 295px;
     padding-left: 22px;
     padding-right: 22px;
+    color: var(--color-primary)
 }
 
-.single-post h2 {
+
+.single-post a {
     font-family: var(--font-main);
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 38px;
+    text-decoration: none;
     color: var(--color-primary);
+}
+
+.single-post a:hover {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .single-post-date {
@@ -167,9 +202,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 26px;
-    color: var(--color-primary);
     position: relative;
-    max-width: fit-content;
 }
 
 .single-post p {
@@ -178,7 +211,6 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    color: var(--color-primary);
 }
 
 .title-works h2 {
@@ -196,21 +228,35 @@
     position: relative;
 }
 
-.works-img {
-    margin-top: 10px;
+.works-left {
+    width: 58%;
 }
 
-.works h2 {
+.works-img {
+    margin-top: 10px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.works-img img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.works a {
+    display: block;
+    text-decoration: none;
     font-family: var(--font-main);
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
     line-height: 44px;
     color: var(--color-primary);
-    margin-top: 0px;
-    text-align: inherit;
-    margin-bottom: 0px;
+}
 
+.works a:hover {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .works-date-item {
@@ -223,7 +269,6 @@
     padding-right: 10px;
     background: #142850;
     border-radius: 16px;
-    max-width: fit-content;
     font-family: var(--font-main);
     font-style: normal;
     font-weight: 900;
@@ -369,8 +414,7 @@
 
     .hamburger div {
         width: 100%;
-        height: 1px;
-        background-color: black;
+        border-top: 1px solid #000;
         transition: all 0.3s ease;
     }
 
@@ -383,7 +427,7 @@
     }
 
     .hamburger.active div:nth-child(3) {
-        transform: rotate(-45deg) translate(8px, -8px);
+        transform: rotate(-45deg) translate(9px, -9px);
     }
 
     .menu.active {
@@ -400,7 +444,6 @@
 
     .section-info.shifted {
         margin-top: 180px;
-        /* Высота меню */
     }
 
     .section-info-wrapper {
@@ -451,6 +494,10 @@
     .title-works h2 {
         text-align: center;
         margin: 0px;
+    }
+
+    .works-left {
+        width: 100%;
     }
 
     .works-img {
