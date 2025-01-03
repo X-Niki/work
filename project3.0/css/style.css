@@ -381,6 +381,10 @@
         margin-right: 12px;
     }
 
+    .header-wrapper ul {
+        gap: 0;
+    }
+
     .menu {
         display: flex;
         flex-direction: column;
@@ -413,6 +417,11 @@
         height: 25px;
         justify-content: space-between;
         margin: 10px;
+        transition: margin 0.3s ease;
+    }
+
+    .hamburger.active {
+        margin-bottom: 180px;
     }
 
     .hamburger div {
@@ -514,7 +523,12 @@
 }
 
 /* Blog page */
-.blog-container {
+.section-blog {
+    margin-left: 19px;
+    margin-right: 19px;
+}
+
+.container-blog {
     max-width: 683px;
     margin-left: auto;
     margin-right: auto;
@@ -585,14 +599,4 @@
     line-height: 24px;
     color: var(--color-primary);
     margin: 0px;
-}
-
-@media (max-width: 768px) {
-    .section-blog {
-        transition: margin-top 0.3s ease;
-    }
-
-    .section-blog.shifted {
-        margin-top: 180px;
-    }
 }
