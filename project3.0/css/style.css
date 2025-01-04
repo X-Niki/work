@@ -598,3 +598,21 @@
     color: var(--color-primary);
     margin: 0px;
 }
+
+/* Work page */
+.title-works h3 {
+    font-family: var(--font-main);
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    color: var(--color-primary);
+}
+
+.container-work {
+    max-width: 683px;
+}
+
+.left-edge {
+    width: 100%;
+}
