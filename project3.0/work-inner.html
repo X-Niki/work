@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>work-inner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container-fluid">
+            <div class="header-wrapper">
+                <div class="hamburger" onclick="toggleMenu()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <ul class="menu" id="menu">
+                    <li><a href="#">Works</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="index.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="work-inner">
+        <div class="container container-inner">
+            <div class="inner-wrapper">
+                <div class="inner">
+                    <div class="inner-title">
+                        <h1>Designing Dashboards with usability in mind</h1>
+                    </div>
+                    <div class="inner-date">
+                        <h5 class="works-date bg-date">2020</h5>
+                        <h4 class="works-type">Dashboard, User Experience Design</h4>
+                    </div>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                        duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                    </p>
+                    <div class="inner-img">
+                        <img src="img/screen1x2.png" alt="program screen">
+                    </div>
+                    <h2>Heading 1</h2>
+                    <h3>Heading 2</h3>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                        duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                    </p>
+                    <div class="inner-img">
+                        <img src="img/image car.png" alt="red car">
+                    </div>
+                    <div class="inner-img">
+                        <img src="img/order.png" alt="order confirmation">
+                    </div>
+                </div>
+            </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-social">
+                <a href="#"><img src="img/facebook.svg" alt="Facebook Logo"></a>
+                <a href="#"><img src="img/instagram.svg" alt="Instagram Logo"></a>
+                <a href="#"><img src="img/Twitter.svg" alt="Twitter Logo"></a>
+                <a href="#"><img src="img/Linkedin.svg" alt="Linkedin Logo"></a>
+            </div>
+            <div class="footer-copyright">
+                <p>Copyright &cop2020 All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('menu');
+            var hamburger = document.querySelector('.hamburger');
+            var content = document.getElementById('content');
+            menu.classList.toggle('active');
+            hamburger.classList.toggle('active');
+            content.classList.toggle('shifted');
+        } 
+    </script>
+</body>
+
+</html>
