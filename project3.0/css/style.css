@@ -671,12 +671,15 @@
 }
 
 .inner-img {
-    display: flex;
-    flex-direction: column;
-    gap: 27px;
+    display: block;
+    margin-bottom: 27px;
 }
 
-.inner-img img{
+.inner-img img {
     width: 100%;
     height: auto;
+}
+
+.inner-img:last-child {
+    margin-bottom: 0;
 }
