@@ -616,3 +616,7 @@
 .left-edge {
     width: 100%;
 }
+
+.works h3 {
+    margin: 0;
+}
