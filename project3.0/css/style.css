@@ -618,7 +618,7 @@
     line-height: 24px;
     color: var(--color-secondary);
     margin-top: 23px;
-    margin-bottom: 46px;
+    margin-bottom: 30px;
 }
 
 .inner h4 {
@@ -670,9 +670,13 @@
     background-color: #FF7C7C;
 }
 
-.inner-img img {
-    display: block;
+.inner-img {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+}
+
+.inner-img img{
     width: 100%;
     height: auto;
-    margin-top: 27px;
 }
