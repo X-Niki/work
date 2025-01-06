@@ -566,6 +566,7 @@
 }
 
 .blog-time h5 {
+    text-align: center;
     font-family: var(--font-main);
     font-style: normal;
     font-weight: 400;
@@ -576,6 +577,7 @@
 }
 
 .blog-time h3 {
+    text-align: center;
     font-family: var(--font-main);
     font-style: normal;
     font-weight: 400;
