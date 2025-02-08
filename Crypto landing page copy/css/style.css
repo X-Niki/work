@@ -162,7 +162,7 @@ body {
     justify-content: space-between;
 }
 
-.left-blok {
+.left-block {
     display: flex;
     align-items: center;
 }
@@ -177,13 +177,13 @@ body {
     color: #FFFFFF;
 }
 
-.right-blok {
+.right-block {
     display: flex;
     align-items: center;
     gap: 15px;
 }
 
-.right-blok ul {
+.right-block ul {
     display: flex;
     justify-content: space-around;
     gap: 30px;
@@ -191,7 +191,7 @@ body {
     text-decoration: none;
 }
 
-.right-blok a {
+.right-block a {
     text-decoration: none;
     font-family: 'Poppins';
     font-style: normal;
@@ -239,8 +239,8 @@ body {
     top: 11%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 504px;
-    height: 504px;
+    width: 800px;
+    height: 800px;
     display: block;
     position: absolute;
     z-index: -1;
