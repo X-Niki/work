@@ -318,7 +318,17 @@ body {
     display: block;
     padding-top: 41px;
     padding-bottom: 41px;
+}
 
+.section2-wrapper li { 
+    display: block;
+    max-width: 200px; 
+}
+
+.section2-wrapper li img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .section2-wrapper ul {
@@ -334,7 +344,13 @@ body {
     margin-top: 92px;
 }
 
-.section3-post h2 {
+.section3-header {
+    max-width: 924px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section3-header h2 {
     font-family: var(--font-primary);
     font-style: normal;
     font-weight: 500;
@@ -343,9 +359,8 @@ body {
     text-align: center;
 }
 
-.section3-post p {
+.section3-header p {
     margin-top: 38px;
-    max-width: 924px;
     margin-left: auto;
     margin-right: auto;
     font-family: var(--font-secondary);
@@ -413,13 +428,16 @@ body {
 }
 
 .section3-item p {
-    margin-bottom: 48px;
     font-family: var(--font-secondary);
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
     text-align: center;
     color: #FFFFFF;
+}
+
+.section3-item p:last-child {
+    margin-bottom: 48px;
 }
 
 /* Section 4 */
