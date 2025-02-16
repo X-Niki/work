@@ -320,9 +320,9 @@ body {
     padding-bottom: 41px;
 }
 
-.section2-wrapper li { 
+.section2-wrapper li {
     display: block;
-    max-width: 200px; 
+    max-width: 200px;
 }
 
 .section2-wrapper li img {
@@ -398,7 +398,7 @@ body {
     font-weight: 300;
     font-size: 32px;
     color: #FFFFFF;
-    
+
 }
 
 .section3-item img {
@@ -463,11 +463,12 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    width: auto;
+    max-width: 1200px;
     height: auto;
 }
 
 .section4-left-item-iphone img {
+    display: block;
     max-width: 100%;
     height: auto;
 }
@@ -490,7 +491,7 @@ body {
     height: 24px;
 }
 
-.section4-right-item h1 {
+.section4-right-item h2 {
     font-family: var(--font-primary);
     font-style: normal;
     font-weight: 500;
@@ -501,7 +502,7 @@ body {
     color: #C23893;
 }
 
-.section4-right-item h2 {
+.section4-right-item h3 {
     font-family: var(--font-primary);
     font-style: normal;
     font-weight: 500;
@@ -511,7 +512,7 @@ body {
     color: #FFFFFF;
 }
 
-.section4-right-item-post h3 {
+.section4-right-item-post h5 {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -549,7 +550,7 @@ body {
     max-width: 603px;
 }
 
-.section5-item-left h1 {
+.section5-item-left h2 {
     font-family: var(--font-primary);
     font-style: normal;
     font-weight: 500;
@@ -595,6 +596,8 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    max-width: 1200px;
+    height: auto;
 }
 
 .section5-item-right-screenshot img {
@@ -611,7 +614,7 @@ body {
     margin-top: 92px;
 }
 
-.section6-title h1 {
+.section6-title h2 {
     font-family: var(--font-primary);
     font-style: normal;
     font-weight: 500;
@@ -673,11 +676,12 @@ body {
 }
 
 .section6-item-block img {
+    display: block;
     width: 40px;
     height: 40px;
 }
 
-.section6-item-block h1 {
+.section6-item-block h3 {
     font-family: var(--font-primary);
     font-style: normal;
     font-weight: 700;
@@ -725,11 +729,12 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    width: auto;
+    max-width: 1200px;
     height: auto;
 }
 
 .section7-left-item-iphone img {
+    display: block;
     max-width: 100%;
     height: auto;
 }
@@ -742,7 +747,7 @@ body {
     margin-top: 245px;
 }
 
-.section7-right-item h1 {
+.section7-right-item h2 {
     font-family: var(--font-primary);
     font-style: normal;
     font-weight: 700;
@@ -751,7 +756,7 @@ body {
     color: #962F79;
 }
 
-.section7-right-item h2 {
+.section7-right-item h3 {
     font-family: var(--font-primary);
     font-style: normal;
     font-weight: 500;
@@ -802,7 +807,7 @@ body {
     align-items: center;
 }
 
-.section8-title h1 {
+.section8-title h2 {
     font-family: var(--font-primary);
     font-style: normal;
     font-weight: 500;
@@ -866,7 +871,8 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    width: auto;
+    max-width: 1200px;
+    width: 100%;
     height: auto;
 }
 
@@ -883,7 +889,7 @@ body {
     justify-content: center;
 }
 
-.section9-item1 h1 {
+.section9-item1 h2 {
     font-family: var(--font-secondary);
     font-style: normal;
     font-weight: 600;
@@ -893,7 +899,7 @@ body {
     color: #962F79;
 }
 
-.section9-item1 h2 {
+.section9-item1 h3 {
     font-family: var(--font-primary);
     font-style: normal;
     font-weight: 500;
@@ -950,7 +956,7 @@ body {
     margin-right: auto;
 }
 
-.footer-item1 h1 {
+.footer-item1 h5 {
     font-family: var(--font-secondary);
     font-style: normal;
     font-weight: 600;
@@ -1014,12 +1020,12 @@ body {
 }
 
 .footer-item2-left-block p {
-font-family: var(--font-secondary);
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-color: #FFFFFF;
+    font-family: var(--font-secondary);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
 }
 
 .footer-item2-right-block {
