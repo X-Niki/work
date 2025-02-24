@@ -805,7 +805,8 @@ body {
 
 .section5-item-right-screenshot img {
     display: block;
-    max-width: 512px;
+    width: 512px;
+    max-width: 100%;
     height: auto;
 
 }
@@ -1317,6 +1318,11 @@ body {
         margin-right: auto;
     }
 }
+    @media (max-width:768px) {
+        .section8-photo-container {
+            max-width: 100%;
+        }
+    }
 
 /* Section 9 */
 
