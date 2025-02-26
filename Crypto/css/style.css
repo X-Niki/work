@@ -161,6 +161,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 32px;
 }
 
 .left-block {
@@ -338,7 +339,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 800px;
-    height: 800px;
+    height: auto;
     display: block;
     position: absolute;
     z-index: -1;
@@ -388,6 +389,11 @@ body {
 
 .section1-bottom img {
     display: block;
+    width: 170px;
+    height: auto;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -455,6 +461,20 @@ body {
 
     .elips h1 {
         font-size: 50px;
+    }
+
+    .elips-img img {
+        width: 500px;
+    }
+
+    .section1-bottom {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .section1-bottom a {
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -620,6 +640,12 @@ body {
     }
 }
 
+@media (max-width: 768px) {
+    .section3-header h2 {
+        font-size: 50px;
+    }
+}
+
 /* Section 4 */
 
 .section4-item-container {
@@ -643,8 +669,9 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    max-width: 1200px;
+    width: 1200px;
     height: auto;
+    object-fit: cover;
 }
 
 .section4-left-item-iphone img {
@@ -739,6 +766,18 @@ body {
     }
 }
 
+@media (max-width: 768px) {
+    .section4-left-item-elips img {
+        width: 500px;
+    }
+
+    .section4-right-item-title h3 {
+        font-size: 50px;
+    }
+}
+
+
+
 /* Section 5 */
 
 .section5-wrapper {
@@ -827,11 +866,11 @@ body {
         text-align: center;
     }
 
-    .section5-item-left a {
-        display: block;
+    .section5-item-left {
+        display: flex;
+        flex-direction: column;
         margin-left: auto;
         margin-right: auto;
-        max-width: fit-content;
     }
 
     .section5-item-right {
@@ -840,6 +879,16 @@ body {
         max-width: 100%;
     }
 }
+    @media (max-width: 768px) {
+        .section5-item-right-ellipse img {
+            width: 500px;
+    }
+
+        .section5-item-left h2 {
+            font-size: 50px;
+    }
+}
+
 
 /* Section 6 */
 
@@ -976,6 +1025,28 @@ body {
     }
 }
 
+@media (max-width: 768px) {
+    .section6-item {
+        flex-direction: column;
+    }
+
+    .section6-item-block {
+        width: 100%;
+    }
+
+    .section6-item-block:nth-child(2),
+    .section6-item-block:nth-child(3),
+    .section6-item-block:nth-child(6) {
+        border-left: none;
+        border-right: none;
+    }
+
+    .section6-item-block:nth-child(2) {
+        padding-top: 58px;
+        border-bottom: 1px solid #C23893;;
+    }
+}
+
 /* Section 7 */
 
 .section7-item-container {
@@ -999,8 +1070,9 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    max-width: 1200px;
+    width: 1200px;
     height: auto;
+    object-fit: cover;
 }
 
 .section7-left-item-iphone img {
@@ -1059,7 +1131,8 @@ body {
     text-transform: capitalize;
     color: #FFFFFF;
     margin-top: 54px;
-    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media (max-width: 992px) {
@@ -1095,6 +1168,16 @@ body {
     .section7-right-item a {
         margin-left: auto;
         margin-right: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .section7-left-item-elips img {
+        width: 500px;
+    }
+
+    .section7-right-item h3 {
+        font-size: 33px;
     }
 }
 
@@ -1324,6 +1407,24 @@ body {
         }
     }
 
+    @media (max-width: 768px) {
+        .section8 {
+            margin-top: 130px;
+        }
+
+        .section8-title h2 {
+            font-size: 40px;
+        }
+
+        .section8-title::after {
+            margin-left: 20px;
+        }
+
+        .section8-title::before {
+            margin-right: 20px;
+        }
+    }
+
 /* Section 9 */
 
 .section9 {
@@ -1381,6 +1482,12 @@ body {
     max-width: 1305px;
     height: auto;
     width: 100%;
+}
+
+@media (max-width: 768px) {
+    .section9-item1 h3 {
+        font-size: 50px;
+    }
 }
 
 /* Footer */
@@ -1490,5 +1597,27 @@ body {
 
     .footer-item2-wrapper {
         max-width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-item1-container {
+        flex-wrap: wrap;
+        max-width: 70%;
+    }
+
+    .footer-item1-group1 {
+        width: 46%;
+        text-align: center;
+    }
+
+    .footer-item1-group2 {
+        margin-top: 40px;
+        width: 46%;
+        text-align: center;
+    }
+
+    .footer-block1-line {
+        flex-direction: column;
     }
 }
