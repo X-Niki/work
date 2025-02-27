@@ -862,6 +862,11 @@ body {
         max-width: 100%;
     }
 
+    .section5-item-left a {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .section5-item-left h2,p {
         text-align: center;
     }
@@ -1619,5 +1624,10 @@ body {
 
     .footer-block1-line {
         flex-direction: column;
+    }
+
+    .footer-item2-wrapper {
+        flex-direction: column-reverse;
+        gap: 7px;
     }
 }
