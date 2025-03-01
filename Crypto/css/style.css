@@ -350,7 +350,7 @@ body {
     font-family: var(--font-primary);
     font-style: normal;
     font-weight: 400;
-    font-size: 90px;
+    font-size: 89px;
     display: flex;
     align-items: center;
     text-transform: lowercase;
@@ -410,6 +410,35 @@ body {
     text-transform: capitalize;
     color: #FFFFFF;
 }
+
+.section1-navigation {
+    display: flex;
+}
+
+.section1-navigation img {
+    display: block;
+    width: 18px;
+    height: auto;
+    max-width: 100%;
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.slides {
+    display: flex;
+    transition: 0.5s ease-in-out;
+    width: 300%;
+}
+
+.slide {
+    width: 100vw; /* Используем ширину экрана */
+    padding: 20px; /* Добавляем отступы для контента */
+    box-sizing: border-box;
+  }
 
 @media (max-width: 1200px) {
     .elips h1 {
