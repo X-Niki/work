@@ -367,23 +367,6 @@
     .info-left p {
         text-align: center;
     }
-}
-
-@media (max-width: 768px) {
-    .container {
-        margin-left: 13px;
-        margin-right: 13px;
-    }
-
-    .header-wrapper {
-        margin-top: 20px;
-        margin-left: 12px;
-        margin-right: 12px;
-    }
-
-    .header-wrapper ul {
-        gap: 0;
-    }
 
     .menu {
         display: flex;
@@ -448,6 +431,24 @@
         transform: translateY(0);
         pointer-events: auto;
     }
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin-left: 13px;
+        margin-right: 13px;
+    }
+
+    .header-wrapper {
+        margin-top: 20px;
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+
+    .header-wrapper ul {
+        gap: 0;
+    }
+
 
     .section-info {
         margin-top: 20px;
