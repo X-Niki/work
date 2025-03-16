@@ -94,10 +94,13 @@
                     <div class="section1-bottom">
                         <a href="#">Explore Now</a>
                         <div class="section1-navigation">
-                            <button class="navigation-prev" onclick="prevSlide()"><img src="img/left.png"
-                                    alt="left"></button>
-                            <button class="navigation-next" onclick="nextSlide()"><img src="img/right.png"
-                                    alt="right"></button>
+                            <button class="navigation-prev" onclick="prevSlide()"><img src="img/left.png" alt="left">
+                            </button>
+                            <div class="counter">
+                                <span id="current-slide">1</span> - <span id="total-slides">3</span>
+                            </div>
+                            <button class="navigation-next" onclick="nextSlide()"><img src="img/right.png" alt="right">
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -575,10 +578,16 @@
         const slides = document.querySelectorAll(".slide");
         let index = 0;
 
+        const currentSlideElement = document.getElementById("current-slide");
+        const totalSlidesElement = document.getElementById("total-slides");
+
+        totalSlidesElement.textContent = slides.length;
+
         function showSlide(index) {
             const slidesContainer = document.querySelector(".slides");
             const width = slides[0].clientWidth;
             slidesContainer.style.transform = `translateX(${-index * width}px)`;
+            currentSlideElement.textContent = index + 1;
         }
 
         function nextSlide() {
