@@ -378,7 +378,7 @@ body {
     font-family: var(--font-primary);
     font-style: normal;
     font-weight: 400;
-    font-size: 90px;
+    font-size: 89px;
     display: flex;
     align-items: center;
     text-transform: lowercase;
@@ -445,6 +445,63 @@ body {
     transform: translateY(2px);
 }
 
+.section1-navigation {
+    display: flex;
+}
+
+.section1-navigation img {
+    display: block;
+    width: 18px;
+    height: auto;
+    max-width: 100%;
+}
+
+.navigation-prev {
+    background-color: #12132A;
+    border: 0;
+}
+
+.navigation-next {
+    background-color: #12132A;
+    border: 0;
+}
+
+#total-slides {
+    color: #767799;
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.slides {
+    display: flex;
+    transition: 0.5s ease-in-out;
+    width: 300%;
+}
+
+.slide {
+    width: 100vw;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: var(--font-secondary);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 168.5%;
+}
+
 @media (max-width: 1200px) {
     .elips h1 {
         font-size: 80px;
@@ -463,6 +520,7 @@ body {
     .elips {
         margin-left: auto;
         margin-right: auto;
+        margin-top: 168px;
     }
 
     .elips h1::before {
@@ -488,6 +546,10 @@ body {
 
     .section1-bottom {
         justify-content: center;
+    }
+
+    .slide {
+        padding: 55px;
     }
 
 }

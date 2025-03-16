@@ -51,25 +51,63 @@
                     <div class="elips-img">
                         <img src="img/ellipse.png" alt="ellipse">
                     </div>
-                    <h1>Live And<br>
-                        on-demand
-                        trading
-                    </h1>
-                    <p>
-                        Lorem ipsum dolor sit amet. Qui consequatur sint 33 volupta officia et sint laboriosam sed
-                        ipsa
-                        sint ut voluptatum labore et possimus voluptas.
-                    </p>
+                    <div class="slider">
+                        <div class="slides">
+                            <div class="slide">
+                                <h1>1Live And<br>
+                                    on-demand
+                                    trading
+                                </h1>
+                                <p>
+                                    Lorem ipsum dolor sit amet. Qui consequatur sint 33 volupta officia et sint
+                                    laboriosam sed
+                                    ipsa
+                                    sint ut voluptatum labore et possimus voluptas.
+                                </p>
+                            </div>
+                            <div class="slide">
+                                <h1>2Live And<br>
+                                    on-demand
+                                    trading
+                                </h1>
+                                <p>
+                                    Lorem ipsum dolor sit amet. Qui consequatur sint 33 volupta officia et sint
+                                    laboriosam sed
+                                    ipsa
+                                    sint ut voluptatum labore et possimus voluptas.
+                                </p>
+                            </div>
+                            <div class="slide">
+                                <h1>3Live And<br>
+                                    on-demand
+                                    trading
+                                </h1>
+                                <p>
+                                    Lorem ipsum dolor sit amet. Qui consequatur sint 33 volupta officia et sint
+                                    laboriosam sed
+                                    ipsa
+                                    sint ut voluptatum labore et possimus voluptas.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                     <div class="section1-bottom">
                         <a href="#">Explore Now</a>
-                        <img src="img/page.png" alt="page navigator">
+                        <div class="section1-navigation">
+                            <button class="navigation-prev" onclick="prevSlide()"><img src="img/left.png" alt="left">
+                            </button>
+                            <div class="counter">
+                                <span id="current-slide">1</span> - <span id="total-slides">3</span>
+                            </div>
+                            <button class="navigation-next" onclick="nextSlide()"><img src="img/right.png" alt="right">
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <div class="section1-img">
                     <img src="img/iphone.png" alt="Photo of the iPhone 12">
                 </div>
             </div>
-        </div>
         </div>
     </section>
     <section class="section2">
@@ -531,7 +569,34 @@
             var hamburger = document.querySelector('.right-block-hamburger');
             var content = document.getElementById('content');
             menu.classList.toggle('active');
-        } 
+            hamburger.classList.toggle('active');
+            content.classList.toggle('shifted');
+        }
+
+        const slides = document.querySelectorAll(".slide");
+        let index = 0;
+
+        const currentSlideElement = document.getElementById("current-slide");
+        const totalSlidesElement = document.getElementById("total-slides");
+
+        totalSlidesElement.textContent = slides.length;
+
+        function showSlide(index) {
+            const slidesContainer = document.querySelector(".slides");
+            const width = slides[0].clientWidth;
+            slidesContainer.style.transform = `translateX(${-index * width}px)`;
+            currentSlideElement.textContent = index + 1;
+        }
+
+        function nextSlide() {
+            index = (index + 1) % slides.length;
+            showSlide(index);
+        }
+
+        function prevSlide() {
+            index = (index - 1 + slides.length) % slides.length;
+            showSlide(index);
+        }
     </script>
 </body>
 
