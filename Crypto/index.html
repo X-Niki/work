@@ -94,7 +94,7 @@
                     <div class="section1-bottom">
                         <a href="#">Explore Now</a>
                         <div class="section1-navigation">
-                            <button class="navigation-prev" onclick="prevSlide()"><img src="img/left.png" alt="left">
+                            <button class="navigation-prev" onclick="prevSlide()">
                             </button>
                             <div class="counter">
                                 <span id="current-slide">1</span> - <span id="total-slides">3</span>
@@ -568,9 +568,7 @@
             var menu = document.getElementById('menu');
             var hamburger = document.querySelector('.right-block-hamburger');
             var content = document.getElementById('content');
-            menu.classList.toggle('active');
-            hamburger.classList.toggle('active');
-            content.classList.toggle('shifted');
+            menu.classList.toggle('active');   
         }
 
         const slides = document.querySelectorAll(".slide");
