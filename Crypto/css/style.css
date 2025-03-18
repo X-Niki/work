@@ -462,28 +462,56 @@ body {
     background-color: #12132A;
     border: 0;
     display: inline-block;
-  position: relative;
-  width: 17px;
-  height: 1.5px;
-  background-color: #ffffff;
-  padding: 0px;
+    position: relative;
+    width: 17px;
+    height: 2px;
+    background-color: #ffffff;
+    padding: 0px;
+    transition: transform 0.3s ease;
 }
 
 .navigation-prev::before {
     content: '';
-  position: absolute;
-  top: -4px;
-  right: 6px;
-  width: 10px;
-  height: 10px;
-  border: 1px solid #FFFFFF;
-  border-width: 1px 1px 0 0;
-  transform: rotate(230deg);
+    position: absolute;
+    top: -4px;
+    right: 7px;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #FFFFFF;
+    border-width: 0 0 2px 2px;
+    transform: rotate(45deg);
+}
+
+.navigation-prev:hover {
+    transform: scale(1.5);
 }
 
 .navigation-next {
     background-color: #12132A;
     border: 0;
+    display: inline-block;
+    position: relative;
+    width: 17px;
+    height: 2px;
+    background-color: #ffffff;
+    padding: 0px;
+    transition: transform 0.3s ease;
+}
+
+.navigation-next::after {
+    content: '';
+    position: absolute;
+    top: -4px;
+    right: 1px;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #FFFFFF;
+    border-width: 2px 2px 0 0;
+    transform: rotate(45deg);
+}
+
+.navigation-next:hover {
+    transform: scale(1.5);
 }
 
 #total-slides {
