@@ -1797,13 +1797,13 @@ body {
     border-color: currentColor;
 }
 
-.footer-item1-container {
+.footer-item1-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     max-width: 1066px;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .footer-item1 h5 {
@@ -1891,7 +1891,7 @@ body {
 }
 
 @media(max-width:1200px) {
-    .footer-item1-container {
+    .footer-item1-wrapper {
         max-width: 100%;
     }
 
@@ -1901,7 +1901,7 @@ body {
 }
 
 @media (max-width: 768px) {
-    .footer-item1-container {
+    .footer-item1-wrapper {
         flex-wrap: wrap;
         max-width: 70%;
         margin-left: auto;
